@@ -1,11 +1,7 @@
 
 .navbar {
     height: 56px;
-    display: flex;
-    justify-content: space-around;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-    border-bottom: 1px solid gray;
+    background-color: black;
 }
 
 .heading h2 {
