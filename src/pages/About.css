@@ -1,0 +1,18 @@
+.about {
+    background-color: lightblue;
+}
+
+.about h3 {
+    color: black;
+}
+
+.about .box {
+    border: 2px solid gray;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 450px;
+
+    margin-left: auto;
+    margin-right: auto;
+}

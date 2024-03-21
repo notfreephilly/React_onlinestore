@@ -1,12 +1,13 @@
 .product {
     vertical-align: top;
-   background-color: lightcoral;
+   background-color: #eaf4f4;
    border: 2px solid black;
-   margin: 12px 10px;
+   padding: 2px 12px;
+   margin: 16px 10px;
 
    display: inline-block;
    width: 300px;
-   height: 400px;
+   height: 420px;
    border-radius: 12px;
 }
 
@@ -18,4 +19,12 @@
 
 .product img {
     width: 280px;
+    height: 280px;
+}
+
+.controls {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

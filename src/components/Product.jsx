@@ -12,11 +12,12 @@ function Product(props) {
       <img src={constants.IMAGE_PATH + props.info.image} />
       <h6>{props.info.title}</h6>
       <label>${props.info.price}</label>
-      <QuantityPicker></QuantityPicker>
-
-      <button onClick={add} className="btn btn-outline-secondary">
-        Add
-      </button>
+      <div className="controls">
+        <QuantityPicker></QuantityPicker>
+        <button onClick={add} className="btn btn-outline-secondary">
+          Add
+        </button>
+      </div>
     </div>
   );
 }
