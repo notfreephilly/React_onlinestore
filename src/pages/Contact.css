@@ -1,0 +1,18 @@
+.contact {
+    margin: 24px;
+    padding: 25px;
+    width: 500px;
+
+    display: inline-block;
+}
+
+.contact .box {
+    border: 2px solid gray;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 450px;
+
+    margin-left: auto;
+    margin-right: auto;
+}

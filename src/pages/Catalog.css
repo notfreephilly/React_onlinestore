@@ -1,8 +1,11 @@
 .catalog {
     background-color: #FFFFFF;
+    /* height: 800px; */
 }
 
-.catalog h1 {
-    color: black;
+.catalog h2 {
+    font-size: 3rem;
+    font-family: Poppins;
+    padding: 24px;
     margin: 0;
 }

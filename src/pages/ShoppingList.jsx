@@ -2,32 +2,56 @@ import { useState } from 'react';
 import './ShoppingList.css';
 
 function ShoppingList() {
-  const [list, setList] = useState(['test1', 'test2', 'test3']);
+  const [list, setList] = useState([]);
+  const [text, setText] = useState('');
 
   function addItem() {
-    console.log('function works');
-
     /**
      * create a copy
      * modify your copy
      * set the copy
      */
     let copy = [...list];
-    copy.push('NEW');
+    copy.push(text);
     setList(copy);
+    setText('');
+  }
+
+  function handleTextChange(e) {
+    const val = e.target.value;
+    setText(val);
+  }
+
+  /*
+   * create a button
+   * when the user click call a fun (deleteAll)
+   *deleteAll should clear the list array  (set an  empty array to it)
+   */
+
+  function deleteAll() {
+    console.log('deleting...');
+    setList([]);
   }
 
   return (
-    <div className="shoppinglist page">
+    <div className="shopping-list page">
       <h2>Shopping List</h2>
       <div className="box">
-        <input type="text" placeholder="Create your list here" />
+        <input
+          onChange={handleTextChange}
+          value={text}
+          type="text"
+          placeholder="Create your list here"
+        />
         <button onClick={addItem} className="btn btn-secondary btn-sm">
-          +
+          Add
+        </button>
+        <button onClick={deleteAll} className="btn btn-sm btn-danger">
+          Clear
         </button>
       </div>
 
-      <ul>
+      <ul className="list-result">
         {list.map((x) => (
           <li>{x}</li>
         ))}

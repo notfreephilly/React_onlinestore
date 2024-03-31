@@ -1,0 +1,38 @@
+.admin .parent {
+    vertical-align: top;
+    display: flex;
+}
+
+.admin .prods {
+    flex: 2;
+}
+
+.admin h1 {
+    margin: 10px 0;
+}
+
+.admin .coupons {
+    flex: 2;
+}
+
+.admin .price {
+    flex: 1;
+}
+
+.coupons, .prods {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.admin .form div {
+    margin-bottom: 10px;
+}
+
+.admin ul {
+    list-style: none;
+}
+
+button {
+    margin-top: 10px;
+}

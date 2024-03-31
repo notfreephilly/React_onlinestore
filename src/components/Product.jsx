@@ -14,7 +14,7 @@ function Product(props) {
       <label>${props.info.price}</label>
       <div className="controls">
         <QuantityPicker></QuantityPicker>
-        <button onClick={add} className="btn btn-outline-secondary">
+        <button onClick={add} className="btn btn-outline-dark">
           Add
         </button>
       </div>
