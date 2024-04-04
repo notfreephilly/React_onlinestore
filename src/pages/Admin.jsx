@@ -20,10 +20,14 @@ function Admin() {
   function handleCouponChange(e) {
     const val = e.target.value;
     const name = e.target.name;
+    // console.log(name);
 
-    let couponCopy = { ...coupon };
-    couponCopy[name] = val;
-    setCoupon(couponCopy);
+    let couponCopy = { ...coupon }; //contents of coupon and putting it in a new variable
+
+    couponCopy[name] = val; //current val of input
+    setCoupon(couponCopy); //equal to the updated coupon
+
+    // setCoupon({...coupon, e})
 
     // console.log(name, val);
   }

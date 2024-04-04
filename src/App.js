@@ -11,14 +11,17 @@ import Catalog from './pages/Catalog';
 import ShoppingList from './pages/ShoppingList';
 import Admin from './pages/Admin';
 import Contact from './pages/Contact';
+import GlobalProvider from './context/GlobalProvider';
+import Cart from './pages/Cart';
 
 import {BrowserRouter,  Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
-    <div className="App">
-        <Navbar />
+    <GlobalProvider>
+      <BrowserRouter>
+        <div className="App">
+         <Navbar />
         
         <Routes>
           <Route path='/' element={<Home />} />
@@ -28,11 +31,13 @@ function App() {
           <Route path='/shoppinglist' element={<ShoppingList />} />
           <Route path='/admin' element={<Admin />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/cart' element={<Cart />} />
         </Routes>        
 
       <Footer />
-    </div>
+      </div>
     </BrowserRouter>
+  </GlobalProvider>
   );
 }
 

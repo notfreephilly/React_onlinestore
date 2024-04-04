@@ -31,3 +31,12 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
+.product .price  {
+    margin: 0 10px;
+}
+
+.product .total {
+    font-size: 24px;
+    color: red;
+}

@@ -9,8 +9,22 @@
 
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import DataContext from '../context/dataContext';
+import { useContext } from 'react';
 
 function Navbar() {
+  const cart = useContext(DataContext).cart;
+
+  function getNumOfProducts() {
+    let total = 0;
+
+    for (let i = 0; i < cart.length; i++) {
+      let prod = cart[i];
+      total += prod.quantity;
+    }
+    return total;
+  }
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
@@ -68,17 +82,11 @@ function Navbar() {
                 </Link>
               </li>
             </ul>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+            <div className="d-flex" role="search">
+              <Link className="btn btn-outline-light" to="/cart" type="button">
+                Cart ({getNumOfProducts()})
+              </Link>
+            </div>
           </div>
         </div>
       </nav>
