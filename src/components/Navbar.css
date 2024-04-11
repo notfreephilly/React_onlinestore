@@ -1,10 +1,22 @@
 
 .navbar {
     height: 56px;
-    background-color: black;
+    background-color: #f9dc5c;
 }
 
-.heading h2 {
-    margin: 0;
-    color: black;
+.container-fluid .navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 26px;
+    border: 2px solid #a47e1b;
+    border-radius: 18% 20%;
+    padding: 6px;
+}
+
+.container-fluid  .navbar-brand:hover {
+    box-shadow: 4px 4px 12px black;
+}
+
+
+.container-fluid {
+    font-size: 18px;
 }

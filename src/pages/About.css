@@ -1,8 +1,53 @@
-.about {
-    padding: 20px;
-    margin: 6px;
+/* RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.about-heading h4 {
-    color: black;
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img, picture, video, canvas, svg  {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/* RESET ENDS */
+
+
+
+
+.about {
+    align-items: center;
+    background-color: #fffae5;
+    padding: 20px;
+}
+
+.about-heading {
+    font-size: 28px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.description {
+    font-size: 24px;
+    margin: 30px;
+    padding: 40px;
 }

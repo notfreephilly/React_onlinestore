@@ -33,8 +33,13 @@ function Product(props) {
     <div className="product">
       <img src={constants.IMAGE_PATH + props.info.image} />
       <h6>{props.info.title}</h6>
-      <label className="price">Price: ${props.info.price.toFixed(2)}</label>
-      <label className="total">Total: ${getTotal()} </label>
+      <label className="price">
+        <b>Price:</b> ${props.info.price.toFixed(2)}
+      </label>
+      <label className="total">
+        <b>Total:</b> ${getTotal(' ')}
+        {''}
+      </label>
 
       <div className="controls">
         <QuantityPicker onChange={quantityChanged} />

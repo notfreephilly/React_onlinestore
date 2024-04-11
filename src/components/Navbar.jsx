@@ -27,7 +27,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
+      <nav className="navbar navbar-expand-lg" data-bs-theme="light">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             REFLEX
@@ -83,7 +83,7 @@ function Navbar() {
               </li>
             </ul>
             <div className="d-flex" role="search">
-              <Link className="btn btn-outline-light" to="/cart" type="button">
+              <Link className="btn btn-outline-dark" to="/cart" type="button">
                 Cart ({getNumOfProducts()})
               </Link>
             </div>
