@@ -43,12 +43,14 @@ function ShoppingList() {
           type="text"
           placeholder="Create your list here"
         />
-        <button onClick={addItem} className="btn btn-secondary btn-sm">
-          Add
-        </button>
-        <button onClick={deleteAll} className="btn btn-sm btn-danger">
-          Clear
-        </button>
+        <div className="btn">
+          <button onClick={addItem} className="btn-add">
+            Add
+          </button>
+          <button onClick={deleteAll} className="btn-clear">
+            Clear
+          </button>
+        </div>
       </div>
 
       <ul className="list-result">

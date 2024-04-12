@@ -42,7 +42,7 @@ function Home() {
         </div>
       </div>
 
-      <Link className="btn btn-dark" to="/catalog">
+      <Link className="shop-btn btn btn-dark" to="/catalog">
         Shop our inventory here!
       </Link>
     </div>

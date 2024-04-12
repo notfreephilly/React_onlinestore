@@ -22,7 +22,7 @@ function QuantityPicker(props) {
     <div className="qt-picker">
       <button
         className="btn btn-outline-dark"
-        disabled={quantity == 1}
+        disabled={quantity === 1}
         onClick={decrease}
       >
         -

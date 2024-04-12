@@ -1,13 +1,15 @@
 .contact {
-    margin: 24px;
-    padding: 25px;
-    width: 500px;
+    background-color: #fffae5;
 
-    display: inline-block;
+    /* margin: 24px; */
+    padding: 25px;
+    /* width: 500px; */
+
+    /* display: inline-block; */
 }
 
 .contact .box {
-    border: 2px solid gray;
+    border: 4px ridge #eccf8b;
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
@@ -15,4 +17,20 @@
 
     margin-left: auto;
     margin-right: auto;
+}
+
+.contact button {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    background-color: #f9dc5c;
+    color: #252422;
+    padding: 10px 14px;
+    border: 4px ridge #eccf8b;
+    border-radius: 12px;
+}
+
+.contact button:hover {
+    background-color: #88751e;
+    color: rgb(215, 214, 214);
 }

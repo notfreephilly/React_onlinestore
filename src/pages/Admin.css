@@ -1,17 +1,131 @@
-.admin .parent {
-    vertical-align: top;
-    display: flex;
+/* Reset styles */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.admin .prods {
-    flex: 2;
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/* end reset */
+
+.admin {
+    background-color: #fffae5;
+    
+}
+
+.parent {
+    display: flex;
+    justify-content: space-between;
 }
 
 .admin h1 {
-    margin: 10px 0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    padding: 16px 0;
 }
 
+.coupons, .prods-box {
+    padding: 8px;
+    text-align: left;
+}
+
+.coupons .coup-set {
+    padding: 20px;
+    border: 4px ridge #eccf8b;
+    border-radius: 10px;
+}
+
+.coup-box ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.coup-box li {
+    text-align: left;
+    border: 4px ridge #eccf8b;
+    border-radius: 10px;
+    margin: 6px 0;
+    padding: 8px 4px;
+}
+
+.coup-btn {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #bbbaa9;
+    border-radius: 10px;
+    border: none;
+}
+
+.coup-btn:hover {
+    background-color: #494947;
+    color: rgb(225, 223, 223);
+}
+
+.prods-box {
+    padding: 16px 14px;
+    border: 4px ridge #eccf8b;
+    border-radius: 10px;
+}
+
+.prods li {
+    text-align: left;
+    border: 4px ridge #eccf8b;
+    border-radius: 10px;
+    padding: 4px 10px;
+    margin: 8px 0;
+}
+
+.prods-box button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #bbbaa9;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.prods-box button:hover {
+    background-color: #494947;
+    color: rgb(225, 223, 223);
+}
+
+
+
+.admin .prods {
+    margin: 0 30px;
+    flex: 2;
+}
+
+
 .admin .coupons {
+    margin: 0 30px;
     flex: 2;
 }
 
@@ -19,11 +133,6 @@
     flex: 1;
 }
 
-.coupons, .prods {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
-}
 
 .admin .form div {
     margin-bottom: 10px;
@@ -31,8 +140,4 @@
 
 .admin ul {
     list-style: none;
-}
-
-button {
-    margin-top: 10px;
 }

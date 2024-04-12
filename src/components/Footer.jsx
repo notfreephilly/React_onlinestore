@@ -6,12 +6,12 @@ function Footer() {
     <div className="footer">
       <h2>HugePump&trade; LLC.</h2>
       <div className="footer-btn">
-        <button>
-          <Link className="footer-link" to="/contact">
-            Contact
-          </Link>
-        </button>
-        <button>Leave Feedback</button>
+        <Link className="footer-link" to="/contact">
+          <button>Contact</button>
+        </Link>
+        <Link className="footer-link" to="/catalog">
+          <button>Shop</button>
+        </Link>
       </div>
     </div>
   );

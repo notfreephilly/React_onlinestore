@@ -1,17 +1,83 @@
 .shopping-list {
-    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fffae5;
+
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.box input {
+    font-weight: bolder;
+    font-family: 'Orbitron', sans-serif;
+    border: 4px ridge #eccf8b;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.box .btn {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.btn-add {
+    font-weight: bolder;
+    border: none;
+    border-radius: 8px;
+    padding: 2px 16px;
+    background-color: rgb(127, 224, 127);
+}
+
+.btn-add:hover {
+    background-color: rgb(72, 153, 72);
+}
+
+.btn-clear {
+    font-weight: bolder;
+    border: none;
+    border-radius: 8px;
+    padding: 2px 16px;
+    background-color: rgb(236, 140, 140);
+}
+
+.btn-clear:hover {
+    background-color: rgb(203, 38, 38);
 }
 
 .shopping-list .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 500px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.5;
 }
 
 .list-result {
+    margin: 30px 50px;
+    padding: 20px;
+    border: 8px ridge #eccf8b;
+    border-radius: 8px;
+    height: 800px;
+    overflow-y: scroll;
+}
+
+.list-result li {
+    background-color: #f0e2c2;
     font-size: 1.6rem;
     list-style: none;
-    margin: 70px;
-    height: 340px;
-    border: 2px solid black;
+    margin: 30px;
+    border: 4px ridge #eccf8b;
+    border-radius: 8px;
 }

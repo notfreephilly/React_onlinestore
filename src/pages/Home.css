@@ -74,7 +74,21 @@ p, h1, h2, h3, h4, h5, h6 {
     height: 350px;
     margin: 20px;
     padding: 30px;
+    padding-top: 0;
     
     font-size: 20px;
+
+}
+
+
+.shop-btn {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 24px;
+    background-color: #f9dc5c;
+    color: #252422;
+    padding: 12px 18px;
+    border: 8px ridge #eccf8b;
 
 }

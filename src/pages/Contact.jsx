@@ -23,9 +23,7 @@ function Contact() {
         </div>
       ) : null}
 
-      <button className="btn btn-outline-dark" onClick={showData}>
-        View contact
-      </button>
+      <button onClick={showData}>View contact</button>
     </div>
   );
 }
